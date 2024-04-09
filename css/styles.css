@@ -1,25 +1,30 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} 
+} */
 
-@font-face {
+/*@font-face {
     font-family: "Roboto", sans-serif;
     src: url(../assets/font/Roboto-Light.ttf);
-} 
+} */
 
-h1, h2, h3, h4, h5, h6, a, p {
+/* h1, h2, h3, h4, h5, h6, a, p {
     font-family: "Roboto", sans-serif;
 } 
 
-body {
+a, p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+} */
+
+/* body {
     background: #DB9191;
-} 
+} */
 
 /* Inicio CSS Header (Responsive Bootstrap) */
 
-.navbar {
+/*.navbar {
     position: sticky;
     top: 0;
     padding: 15px;
@@ -42,13 +47,13 @@ body {
 
 .nav-link:hover {
     color: #EBFF00;
-} 
+} */
 
 /* Fin de CSS Header (Responsive con Bootstrap) */
 
 /* Inicio CSS Componente Button */
 
-.button {
+/* .button {
     padding: 15px 30px;
     cursor: pointer;
     font-size: 20px;
@@ -59,13 +64,13 @@ body {
     border-radius: 12px;
     color: black;
     background-color: #EBFF00;
-}
+} */
 
 /* Fin de CSS COmponente Button */
 
 /* Inicio CSS Hero (Responsive Normal) */
 
-.hero {
+/*.hero {
     background-image: url(../assets/images/home/hero.webp);
     background-repeat: repeat;
     background-size: cover;
@@ -98,21 +103,21 @@ body {
         font-size: 40px;
         padding-top: 80px;
     }
-}
+} */
 
-.hero__title::selection {
+/*.hero__title::selection {
     color: #EBFF00;
-}
+} */
 
-.hero__span {
-    color: #EBFF00;
+/*.hero__span {
+    color: #FFB800;
 }
 
 .hero__span::selection {
     color: #000018;
-}
+} */
 
-.hero__buttons {
+/*.hero__buttons {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -129,7 +134,7 @@ body {
         text-align: center;
         margin-top: 60px;
     }
-}
+} 
 
 @media (min-width: 360px) and (max-width: 640px) {
     .hero__buttons {
@@ -144,9 +149,9 @@ body {
 
 .hero__button {
     padding: 15px 30px;
-}
+} */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+/*@media (min-width: 768px) and (max-width: 1024px) {
     .button {
         padding: 12px 20px;
         margin-top: 40px;
@@ -166,9 +171,9 @@ body {
         font-size: 14px;
 
     }
-}
+} */
 
-.hero__button--primary:hover {
+/*.hero__button--primary:hover {
     background-color: #401992;
     color: wheat;
 }
@@ -182,7 +187,7 @@ body {
 
 /* CSS Card Article Album */ 
 
-.article {
+/*.article {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -192,13 +197,13 @@ body {
 }
 
 @media (min-width: 360px) {
-    .article{
+    .article {
         margin: 0 auto;
         margin-bottom: 20px;
     }
-}
+} */
 
-.article__maintitle {
+/*.article__maintitle {
     padding-top: 30px;
     font-size: 50px;
     font-weight: 600;
@@ -208,9 +213,9 @@ body {
 
 .article__maintitle::selection {
     color: #EBFF00;
-}
+} */
 
-.article__container {
+/*.article__container {
     display: flex;
     flex-direction: row;
     gap: 40px;
@@ -243,9 +248,9 @@ body {
     width: 250px;
     height: 250px;
     border-radius: 12px;
-}
+} */
 
-@media (min-width: 360px) { 
+/*@media (min-width: 360px) { 
     .article__image {
         width: 250px;
         height: 250px;
@@ -257,9 +262,9 @@ body {
         width: 300px;
         height: 300px;
     }
-}
+} */
 
-.article__content {
+/*.article__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -289,13 +294,13 @@ body {
     .article__content {
         max-width: 900px;
     }
-}
+} */
 
-.article__title {
+/*.article__title {
     color: white;
-}
+} */
 
-@media (min-width: 360px) { 
+/*@media (min-width: 360px) { 
     .article__title {
         font-size: 40px;
         font-weight: 600;
@@ -320,13 +325,13 @@ body {
         text-align: left;
         font-size: 44px;
     }
-}
+} */
 
-.article__text {
+/*.article__text {
     color: white;
-}
+} */
 
-@media (min-width: 360px) {
+/*@media (min-width: 360px) {
     .article__text {
         font-size: 26px;
         text-align: center;
@@ -351,38 +356,37 @@ body {
         text-align: left;
         font-size: 28px;
     }
-}
+} */
 
-.article__buttons {
+/*.article__buttons {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 30px;
-}
+}*/
 
-@media (min-width: 1024px) {
+/*@media (min-width: 1024px) {
     .article__buttons {
         justify-content: flex-start;
     }
-}
+} */
 
-.article__button {
+/*.article__button {
     padding: 10px 40px;
-    
-}
+} */
 
 /* Fin CSS Card Article Index */
 
 /* Inicio CSS Integrantes (No Responsive)*/
 
-.tarjeta { 
+/*.tarjeta { 
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 40px;
     gap: 60px;
-}
+} */
 
 /* Areas de Tarjetas*/
 
@@ -408,11 +412,11 @@ body {
 
 .tarjeta__hector {
     grid-area: Hector;
-}
+} 
 
 /*Medias Queries Areas*/
 
-@media (min-width: 360px) and (max-width: 680px) {
+/* @media (min-width: 360px) and (max-width: 680px) {
     .tarjeta {
         display: grid;
         grid-template-areas: 
@@ -445,9 +449,9 @@ body {
             "Grano Cuico Hector"
         ; 
     }
-}
+} */
 
-.tarjeta__content {
+/*.tarjeta__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -475,19 +479,19 @@ body {
 .tarjeta__text {
     text-align: center;
     color: #EBFF00;
-}
+} */
 
 /*Acordeones*/
 
-.acordeon {
+/*.acordeon {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     padding-bottom: 40px;   
-}
+} */
 
-@media (min-width: 360px) {
+/*@media (min-width: 360px) {
     .acordeon {
         gap: 35px;
     }
@@ -503,7 +507,7 @@ body {
     font-size: 60px;
     font-weight: 600;
     color: black;
-}
+} 
 
 @media (min-width: 360px) {
     .acordeon__biographies {
@@ -528,9 +532,9 @@ body {
     .acordeon__biographies {
         font-size: 52px;
     }
-}  
+} */
 
-.acordeon__list {
+/*.acordeon__list {
     padding: 20px 40px;
     border-radius: 12px;
     transition: all .3s ease-in-out;
@@ -566,13 +570,13 @@ body {
     .acordeon__list {
         width: 800px;
     }
-}
+} */
 
-.acordeon__list:hover {
+/* .acordeon__list:hover {
     transform: scale(1.1);
-}
+} */
 
-.acordeon__title {
+/*.acordeon__title {
     font-size: 36px;
     font-weight: 600;
     cursor: pointer;
@@ -601,14 +605,14 @@ body {
     .acordeon__title {
         font-size: 32px;
     }
-}
+} */
 
-.acordeon__title:hover {
+/* .acordeon__title:hover {
     color: #FFB800;
     transition: all .2s ease-in-out;
-}
+} */
 
-.acordeon__text {
+/* .acordeon__text {
     padding: 10px 0;
     font-size: 20px;
     font-weight: 400;
@@ -634,31 +638,31 @@ body {
         font-size: 22px;
         font-weight: 300;
     }
-}
+} */
 
 /* Fin de CSS Seccion Integrantes */
 
 /* Inicio CSS Albumes Cartas (Responsive Normal) */
 
-.container {
+/* .container {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+} 
 
 .container__description {
     max-width: 990px;
     margin-top: 20px;
-}
+} 
 
-.container__title {
+ .container__title {
     font-size: 40px;
     font-weight: bold;
     font-weight: 600;
     color: black;
-}
+} 
 
 .container__text {
     padding-top: 10px;
@@ -666,7 +670,7 @@ body {
     margin-top: 10px;
     font-weight: 400;
     color: black;
-}
+} 
 
 .cartas__container {
     width: 100%;
@@ -772,13 +776,13 @@ body {
     display: inline-block;
     margin-top: 12px;
     padding: 10px 40px;
-}
+} */
 
 /* Fin de CSS Albumes (Responsive Normal) */
 
 /* Inicio CSS Seccion Shows (Responsive Normal) */
 
-.shows {
+/*.shows {
     background-image: url(../assets/images/shows/teatro-de-verano.webp);
     background-position: center;
     background-repeat: no-repeat;
@@ -791,9 +795,9 @@ body {
     .shows {
         height: auto;
     }
-}
+} */
 
-.shows__container {
+/* .shows__container {
     display: flex;
     flex-direction: column;
     max-width: 600px;
@@ -803,9 +807,9 @@ body {
     .shows__container {
         max-width: 800px;
     }
-}
+} */
 
-.shows__title {
+/*.shows__title {
     font-size: 60px;
     font-weight: 600;
     color: #000018;
@@ -816,9 +820,9 @@ body {
         font-size: 40px;
         font-weight: bold;
     }
-}
+} */
 
-.shows__text {
+/* .shows__text {
     font-size: 28px;
     color: orange;
 }
@@ -828,9 +832,9 @@ body {
         font-weight: bold;
         font-size: 22px;
     }
-}
+} */
 
-.shows__buttons { 
+/* .shows__buttons { 
     display: flex;
     gap: 30px;
 }
@@ -840,9 +844,9 @@ body {
         flex-direction: column;
         gap: 10px;
     }
-}
+} */
 
-.shows__button {
+/*.shows__button {
     margin-top: 20px;
     padding: 10px 60px;
     text-align: center;
@@ -859,24 +863,26 @@ body {
     .shows__button {
         padding: 10px 30px;
     }
-}
+} */
 
-.shows__button--primary:hover {
+/* .shows__button--primary:hover {
     background: #09f;
 }
 
 .shows__button--secondary:hover {
     background:#000018;
     color: wheat;
-}
+} */
 
-.acordeon__shows {
+/*Acordeones de Shows*/
+
+/*.acordeon__shows {
     display: flex;
     align-items: flex-start;
     gap: 60px;
-}
+} */
 
-@media (min-width: 360px) {
+ /*@media (min-width: 360px) {
     .acordeon__shows {
         gap: 40px;
         padding-top: 30px;
@@ -888,25 +894,20 @@ body {
         gap: 40px;
         padding-top: 30px;
     }
-}
+} */
 
-@media (min-width: 360px) and (max-width: 520px) {
-    .acordeon__shows-text {
-        font-size: 14px;
-    }
-}
 
-.acordeon__shows-subtitle {
+/*.acordeon__shows-subtitle {
     font-size: 40px;
     font-weight: bold;
     color: orange;
-}
+} */
 
-.acordeon__shows-list {
+/*.acordeon__shows-list {
     width: 450px;
-}
+} */
 
-@media (max-width: 520px) {
+/*@media (max-width: 520px) {
     .acordeon__shows-list {
         width: 300px;
     }
@@ -916,17 +917,23 @@ body {
     .acordeon__shows-title {
         font-size: 18px;
     }
-}
+} */
+
+/*@media (min-width: 360px) and (max-width: 520px) {
+    .acordeon__shows-text {
+        font-size: 14px;
+    }
+} */
 
 /* Fin de CSS Seccion Shows (Responsive Normal) */
 
 /* Inicio CSS Contacto (Responsive Normal) */
 
-.form {
+/*.form {
     margin: 40px;
-}
+} */
 
-.form__container {
+/*.form__container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -936,9 +943,9 @@ body {
     border-radius: 12px;
     box-shadow: 1px 1px 12px 2px black;
     background-color: #000018;
-}
+} */
 
-@media (min-width: 480px) and (max-width: 768px) {
+/* @media (min-width: 480px) and (max-width: 768px) {
     .form__container {
         align-items: flex-start;
         max-width: 350px;
@@ -950,15 +957,15 @@ body {
         align-items: flex-start; 
         max-width: 300px;
     }
-}
+} */
 
-.form__title {
+/*.form__title {
     font-size: 40px;
     font-weight: bold;
     color: white;
-}
+} */
 
-@media (min-width: 480px) and (max-width: 768px) {
+/* @media (min-width: 480px) and (max-width: 768px) {
     .form__title {
         font-size: 30px; 
     }
@@ -968,22 +975,22 @@ body {
     .form__title {
         font-size: 24px; 
     }
-}
+} */
 
-.form__content {
+/*.form__content {
     display: flex;
     flex-direction: column;
     padding-top: 15px;
-}
+} */
 
-.form__label {
+/*.form__label {
     font-size: 24px;
     margin-bottom: 5px;
     font-weight: 600;
     color: white;
-}
+} */
 
-@media (min-width: 480px) and (max-width: 768px) {
+/*@media (min-width: 480px) and (max-width: 768px) {
     .form__label {
         font-size: 20px; 
     }
@@ -993,18 +1000,17 @@ body {
     .form__label {
         font-size: 16px; 
     }
-    
-    ::placeholder {
+} */
+/*    ::placeholder {
         font-size: 14px;
-    }
-}
+    } */
 
-.form__input {
+/*.form__input {
     padding: 3px;
     width: 350px;
-}
+} */
 
-@media (min-width: 480px) and (max-width: 768px) {
+/* @media (min-width: 480px) and (max-width: 768px) {
     .form__input {
         max-width: 280px;
     }
@@ -1014,20 +1020,20 @@ body {
     .form__input {
         max-width: 200px;
     }
-}
+} */
 
-.form__terms {
+/* .form__terms {
     display: flex;
     flex-direction: column;
     margin-top: 15px;
-}
+} */
 
-.form__checkbox {
+/* .form__checkbox {
     width: 16px;  
     height: 16px;  
-}
+} */
 
-@media (min-width: 480px)  and (max-width: 768px) {
+/* @media (min-width: 480px)  and (max-width: 768px) {
     .form__checkbox {
         width: 12px;
         height: 12px;
@@ -1039,15 +1045,15 @@ body {
         width: 10px;
         height: 10px;
     }
-} 
+} */
 
-.form__text {
+/* .form__text {
     font-size: 20px;
     color: white;
     max-width: 350px;
-}
+} */
 
-@media (min-width: 480px)  and (max-width: 768px) {
+/* @media (min-width: 480px)  and (max-width: 768px) {
     .form__text {
         font-size: 16px;
     }
@@ -1057,24 +1063,24 @@ body {
     .form__text {
         font-size: 14px;
     }
-} 
+} */
 
-.form__buttons {
+/* .form__buttons {
     display: flex;
     gap: 30px;
-}
+} */
 
-@media (min-width: 360px) and (max-width:480px) {
+/*@media (min-width: 360px) and (max-width:480px) {
     .form__buttons {
         gap: 12px;
     }
-}
+} */
 
-.form__button {
+/*.form__button {
     padding: 12px 40px;   
-}
+} */
 
-@media (min-width: 480px)  and (max-width: 768px) {
+/* @media (min-width: 480px)  and (max-width: 768px) {
     .form__button {
         padding: 6px 20px;
     }
@@ -1084,9 +1090,9 @@ body {
     .form__button {
         padding: 6px 16px;
     }
-}
+} */
 
-.form__button--primary:hover {
+/*.form__button--primary:hover {
     background-color: #401992;
     color: wheat;
     transition: all .6s;
@@ -1096,7 +1102,7 @@ body {
     background-color: #401992;
     color: wheat;
     transition: all .6s;
-}
+} */
 
 /* Fin de CSS Contacto (Responsive Normal) */
 

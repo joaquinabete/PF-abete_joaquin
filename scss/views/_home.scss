@@ -1,0 +1,334 @@
+.hero { /*Gran Padre Hero*/
+  background-image: url(../assets/images/home/hero.webp);
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center; 
+  height: 800px;
+
+  .hero__title {
+    padding-top: 60px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+    color: black;
+  }
+
+@media (min-width: 768px) and (max-width: 1024px) { /*Medias Hero__Title*/
+    .hero__title {
+      font-size: 50px;
+    }
+}
+    
+@media (min-width: 640px) and (max-width: 768px) {
+    .hero__title {
+      font-size: 46px;
+    }
+}
+    
+@media (min-width: 360px) and (max-width: 640px)  {
+    .hero__title {
+      font-size: 40px;
+      padding-top: 80px;
+    }
+}
+
+.hero__title::selection {
+    color: #EBFF00;
+} 
+  .hero__span {
+    color: #FFB800;
+  }
+    .hero__span::selection {
+      color: #000018;
+    }
+  
+.hero__buttons { /*Segundo Contenedor Hero__Buttons*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+  
+@media (min-width: 640px) and (max-width: 768px) { /*Medias Hero__Buttons*/
+    .hero__buttons {
+      flex-direction: column;
+      max-width: 250px;
+      margin: 0 auto;
+      gap: 20px;
+      text-align: center;
+      margin-top: 60px;
+    }
+}
+  
+@media (min-width: 360px) and (max-width: 640px) {
+    .hero__buttons {
+      flex-direction: column;
+      max-width: 200px;
+      margin: 0 auto;
+      gap: 15px;
+      text-align: center;
+      margin-top: 20px;
+    }
+}
+
+.hero__button { 
+  padding: 15px 30px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) { /*Medias Button [Se Alojan en Components]*/
+  .button {
+    padding: 12px 20px;
+    margin-top: 40px;
+  }
+}
+  
+@media (min-width: 640px) and (max-width: 768px) {
+  .button {
+    padding: 12px 16px;
+    font-size: 18px;
+  }
+}
+  
+@media (min-width: 360px) and (max-width: 640px) {
+  .button {
+    padding: 8px 14px;
+    font-size: 14px;
+  
+  }
+} 
+
+.hero__button--primary:hover {
+  background-color: #401992;
+  color: wheat;
+}
+
+.hero__button--secondary:hover {
+  background-color: #401992;
+  color: wheat;
+} 
+
+}
+
+.article { /*Primer Gran Padre Article Cartas Integrantes*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+
+  .article__maintitle {
+    padding-top: 30px;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    color: #000018;
+  }
+
+    .article__maintitle::selection {
+      color: #EBFF00;
+    }
+}
+
+@media (min-width: 360px) { /*Medias Article Cartas Integrantes*/
+  .article {
+      margin: 0 auto;
+      margin-bottom: 20px;
+  }
+
+.article__container { /* Segundo Bloque Padre Article_Container*/
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  box-shadow: 1px 1px 12px 2px black;
+  background-color: #000018;
+
+  .article__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+    .article__image {
+      width: 250px;
+      height: 250px;
+      border-radius: 12px;
+    }
+
+    @media (min-width: 360px) {  /*Medias Article__Image*/
+      .article__image {
+          width: 250px;
+          height: 250px;
+      }
+    }
+    
+    @media (min-width: 640px) { 
+      .article__image {
+          width: 300px;
+          height: 300px;
+      }
+    }
+}
+
+@media (min-width: 360px)  {  /*Medias Article__Container*/
+  .article__container {
+    flex-direction: column;
+  }   
+}
+
+@media (min-width: 768px) { 
+  .article__container {
+    flex-direction: row;
+  }   
+}
+
+.article__content { /* Tercer Bloque Padre Contenido de Integrantes [Article__Content] */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .article__title {
+    color: white;
+  }
+
+    .article__text {
+      color: white;
+    }
+
+@media (min-width: 360px) { /*Medias Title*/
+  .article__title {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+  }
+}
+
+@media (min-width: 640px) { 
+  .article__title {
+    font-size: 38px;
+  }
+}
+
+@media (min-width: 768px) {
+  .article__title {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 1024px) { /*Fin de Medias Title*/
+  .article__title {
+    text-align: left;
+    font-size: 44px;
+  }
+}
+
+@media (min-width: 360px) { /*Medias Text*/
+  .article__text {
+    font-size: 26px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 640px) {
+  .article__text {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 768px) {
+  .article__text { 
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) { /*Fin de Medias Text*/
+  .article__text {
+    text-align: left;
+    font-size: 28px;
+  }
+}
+
+.article__buttons { /*Subbloque de la tercer clase Padre [article__content]*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+  .article__button {
+    padding: 12px 40px;
+  }
+}
+
+@media (min-width: 360px) { /*Medias Buttons por dentro*/
+  .article__button {
+    font-size: 16px;
+  }
+}
+  
+@media (min-width: 640px) {
+  .article__button {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 360px) { /*Medias contenedor de Buttons*/
+  .article__buttons {
+    gap: 10px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 640px) {
+  .article__buttons {
+    gap: 20px;
+  }
+}
+
+@media (min-width: 640px) {
+  .article__buttons {
+    gap: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .article__buttons {
+    justify-content: flex-start;
+  }
+ }
+} 
+
+@media (min-width: 360px) { /*Medias Article__Content*/
+  .article__content {
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 640px) { 
+  .article__content {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .article__content {
+    max-width: 600px;
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .article__content {
+    max-width: 900px;
+  }
+ }
+}
+
+
+
+
+
+

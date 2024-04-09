@@ -1,0 +1,25 @@
+.tarjeta__guillermo {
+  grid-area: Guillermo;
+}
+
+.tarjeta__hugo {
+  grid-area: Hugo;
+}
+
+.tarjeta__michael {
+  grid-area: Michael;
+}
+
+.tarjeta__grano {
+  grid-area: Grano;
+}
+
+.tarjeta__cuico {
+  grid-area: Cuico;
+}
+
+.tarjeta__hector {
+  grid-area: Hector;
+}
+
+/*# sourceMappingURL=grid.css.map */

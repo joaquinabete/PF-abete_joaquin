@@ -1,0 +1,229 @@
+.tarjeta { /*Contenedor Padre de Tarjetas*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 60px;
+
+    .tarjeta__content { /*Segundo contenedor Padre de Tarjetas*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 350px;
+        padding: 20px;
+        box-shadow: 1px 1px 12px 2px black;
+        background-color: #000018; 
+
+      .tarjeta__image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+      }
+
+        .tarjeta__title {
+          padding-top: 20px;
+          font-size: 20px;
+          font-weight: 700;
+          color: #EBFF00;
+        }
+    
+          .tarjeta__text {
+            text-align: center;
+            color: #EBFF00;
+          }
+    }
+}
+
+@media (min-width: 360px) and (max-width: 680px) { /*Medias Queries Areas*/
+    .tarjeta {
+        display: grid;
+        grid-template-areas: 
+            "Guillermo"
+            "Hugo"
+            "Michael"
+            "Grano"
+            "Cuico"
+            "Hector"
+        ; 
+    }
+}
+
+@media (min-width: 681px) and (max-width: 1020px) {
+    .tarjeta {
+        display: grid;
+        grid-template-areas: 
+            "Guillermo Hugo"
+            "Michael Grano"
+            "Cuico Hector"
+        ; 
+    }
+}
+
+@media (min-width: 1024px) {
+    .tarjeta {
+        display: grid;
+        grid-template-areas: 
+            "Guillermo Hugo Michael"
+            "Grano Cuico Hector"
+        ; 
+    }
+}
+
+.acordeon { /*Primer Contenedor Padre Acordeon*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 40px;   
+
+    .acordeon__biographies {
+      font-size: 60px;
+      font-weight: 600;
+      color: black;
+    }
+
+    @media (min-width: 360px) {
+        .acordeon__biographies {
+            text-align: center;
+            font-size: 36px;
+        }
+    }
+    
+    @media (min-width: 480px) {
+        .acordeon__biographies {
+            font-size: 40px;
+        }
+    }
+    
+    @media (min-width: 640px) {
+        .acordeon__biographies {
+            font-size: 46px;
+        }
+    }   
+    
+    @media (min-width: 768px) {
+        .acordeon__biographies {
+            font-size: 52px;
+        }
+    }
+    
+.acordeon__list { /*Segundo Contenedor Padre de Acordeon*/
+  padding: 20px 40px;
+  border-radius: 12px;
+  transition: all .3s ease-in-out;
+  box-shadow: 1px 1px 12px 1px black; 
+  background-color: #000018;
+
+        .acordeon__title {
+          font-size: 36px;
+          font-weight: 600;
+          cursor: pointer;
+          color: #5abeb1;
+        }
+          .acordeon__title:hover {
+            color: #FFB800;
+            transition: all .2s ease-in-out;
+        }   
+            .acordeon__text {
+              padding: 10px 0;
+              font-size: 20px;
+              font-weight: 400;
+              color: #FFB800;
+            }
+
+@media (min-width: 360px) { /*Medias acordeon__title*/
+    .acordeon__title {
+        font-size: 18px;
+    }
+}
+        
+@media (min-width: 480px) {
+    .acordeon__title {
+        font-size: 24px;
+    }
+}
+        
+@media (min-width: 640px) {
+    .acordeon__title {
+        font-size: 28px;
+    }
+}
+        
+@media (min-width: 768px) {
+    .acordeon__title {
+        font-size: 32px;
+    }
+}
+        
+@media (min-width: 360px) { /*Medias acordeon__text*/
+    .acordeon__text {
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
+        
+@media (min-width: 480px) {
+    .acordeon__text {
+        font-size: 18px;
+        font-weight: 300;
+    }
+}
+        
+@media (min-width: 640px) {
+    .acordeon__text {
+        font-size: 22px;
+        font-weight: 300;
+    } 
+  }
+}
+
+@media (min-width: 360px) { /*Medias acordeon__list*/
+  .acordeon__list {
+    width: 300px;
+  }
+}
+
+@media (min-width: 480px) {
+  .acordeon__list {
+    width: 430px;
+  }
+}
+
+@media (min-width: 640px) {
+  .acordeon__list {
+    width: 550px;
+  }
+}
+
+@media (min-width: 768px) {
+  .acordeon__list {
+    width: 600px;
+  }
+}
+
+@media (min-width: 992px) {
+  .acordeon__list {
+    width: 800px;
+  }
+}
+
+.acordeon__list:hover { /*Corregir luego, para que este dentro de acordeon__list*/
+    transform: scale(1.1);
+  } 
+}
+
+@media (min-width: 360px) { /*Medias acordeon estan por fuera*/
+  .acordeon {
+    gap: 35px;
+  }
+}
+
+@media (min-width: 480px) {
+  .acordeon {
+    gap: 40px;
+  }
+}
+
