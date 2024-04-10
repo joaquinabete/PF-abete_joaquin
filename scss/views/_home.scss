@@ -1,8 +1,6 @@
 .hero { 
   background-image: url(../assets/images/home/hero.webp);
-  background-repeat: repeat;
-  background-size: cover;
-  background-position: center; 
+  @include backgrounds-positions; 
   height: 800px;
 
   .hero__title {
@@ -110,10 +108,7 @@
 }
 
 .article { 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex-column-center;
   flex-wrap: wrap;
   gap: 50px;
 
@@ -146,9 +141,7 @@
   background-color: $background-color-secondary;
 
   .article__logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-row-center;
     padding: 20px 0;
   }
 
@@ -193,7 +186,6 @@
   .article__title {
     color: $color-text-quaternary;
   }
-
     .article__text {
       color: $color-text-quaternary;
     }

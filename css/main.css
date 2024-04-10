@@ -31,7 +31,7 @@ body {
   text-decoration: none;
   border: none;
   border-radius: 12px;
-  color: black;
+  color: #000000;
   background-color: #EBFF00;
 }
 
@@ -39,6 +39,7 @@ body {
   position: sticky;
   top: 0;
   padding: 15px;
+  z-index: 50;
 }
 
 .header__background {
@@ -62,7 +63,7 @@ body {
 
 .hero {
   background-image: url(../assets/images/home/hero.webp);
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 800px;
@@ -191,6 +192,7 @@ body {
   }
   .article__container .article__logo {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 20px 0;
@@ -390,6 +392,7 @@ body {
   border-radius: 12px;
   box-shadow: 1px 1px 12px 2px black;
   background-color: #000018;
+  transition: all 0.4s ease;
 }
 .tarjeta .tarjeta__content .tarjeta__image {
   width: 150px;
@@ -405,6 +408,9 @@ body {
 .tarjeta .tarjeta__content .tarjeta__text {
   text-align: center;
   color: #EBFF00;
+}
+.tarjeta .tarjeta__content:hover {
+  transform: scale(1.2);
 }
 
 @media (min-width: 360px) and (max-width: 680px) {
@@ -473,7 +479,6 @@ body {
 }
 .acordeon .acordeon__list .acordeon__title:hover {
   color: #EBFF00;
-  transition: all 0.2s ease-in-out;
 }
 .acordeon .acordeon__list .acordeon__text {
   padding: 10px 0;
@@ -696,9 +701,9 @@ body {
 
 .shows { /*Gran Contenedor Padre Shows Principal*/
   background-image: url(../assets/images/shows/teatro-de-verano.webp);
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 1000px;
   padding: 10% 10%;
 }

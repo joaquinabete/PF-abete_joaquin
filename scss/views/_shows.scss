@@ -1,8 +1,6 @@
 .shows { /*Gran Contenedor Padre Shows Principal*/
     background-image: url(../assets/images/shows/teatro-de-verano.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include backgrounds-positions;
     height: 1000px;
     padding: 10% 10%;
 

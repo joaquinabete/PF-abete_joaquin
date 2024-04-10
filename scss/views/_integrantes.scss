@@ -30,24 +30,19 @@
 }
 
 .tarjeta { 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    @include flex-row-center;
     padding: 40px;
     gap: 60px;
-
+    
     .tarjeta__content { 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 300px;
-        height: 350px;
-        padding: 20px;
-        border-radius: 12px;
-        box-shadow: $box-shadow;
-        background-color: $background-color-secondary; 
+      @include flex-column-center;
+      width: 300px;
+      height: 350px;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: $box-shadow;
+      background-color: $background-color-secondary; 
+      transition: all .4s ease;
 
       .tarjeta__image {
         width: 150px;
@@ -66,9 +61,13 @@
             text-align: center;
             color: $color-text-heptenary;
           }
-    }
-}
+  }
 
+  .tarjeta__content:hover {
+    transform: scale(1.2);
+  }
+}
+  
 @media (min-width: 360px) and (max-width: 680px) {
     .tarjeta {
         display: grid;
@@ -147,7 +146,7 @@
   border-radius: 12px;
   transition: all .3s ease-in-out;
   box-shadow: $box-shadow; 
-  background-color: #000018;
+  background-color: $background-color-secondary;
 
         .acordeon__title {
           font-size: 36px;
@@ -157,7 +156,6 @@
         }
           .acordeon__title:hover {
             color: $color-text-heptenary;
-            transition: all .2s ease-in-out;
         }   
             .acordeon__text {
               padding: 10px 0;
