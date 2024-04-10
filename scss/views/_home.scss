@@ -112,7 +112,7 @@
   flex-wrap: wrap;
   gap: 50px;
 
-  .article__maintitle {
+  &__maintitle {
     padding-top: 30px;
     font-size: 50px;
     font-weight: 600;
@@ -120,7 +120,7 @@
     color: $color-text-january;
   }
 
-    .article__maintitle::selection {
+    &__maintitle::selection {
       color: $color-text-heptenary;
     }
 }
@@ -140,12 +140,12 @@
   box-shadow: $box-shadow;
   background-color: $background-color-secondary;
 
-  .article__logo {
+  &__logo {
     @include flex-row-center;
     padding: 20px 0;
   }
 
-    .article__image {
+    &__image {
       width: 250px;
       height: 250px;
       border-radius: 12px;

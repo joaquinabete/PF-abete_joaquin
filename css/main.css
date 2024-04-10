@@ -165,14 +165,14 @@ body {
   flex-wrap: wrap;
   gap: 50px;
 }
-.article .article__maintitle {
+.article__maintitle {
   padding-top: 30px;
   font-size: 50px;
   font-weight: 600;
   text-align: center;
   color: #000018;
 }
-.article .article__maintitle::selection {
+.article__maintitle::selection {
   color: #EBFF00;
 }
 
@@ -190,14 +190,14 @@ body {
     box-shadow: 1px 1px 12px 2px black;
     background-color: #000018;
   }
-  .article__container .article__logo {
+  .article__container__logo {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 20px 0;
   }
-  .article__container .article__image {
+  .article__container__image {
     width: 250px;
     height: 250px;
     border-radius: 12px;
