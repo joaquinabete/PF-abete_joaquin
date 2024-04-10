@@ -2,61 +2,86 @@
     width: 100%;
   
     .footer__background { /*Segundo Padre Footer Background*/
-      background-color: #030303;
+      background-color: $background-color-quaternary;
   
       .footer__container { /*Padre Contenedor del primer Bloque*/
         max-width: 500px;
   
         .footer__logo {
-          width: 120px;
-          height: 120px;
+          width: 140px;
+          height: 140px;
           border-radius: 50%;
         }
 
-        @media (min-width: 360px) and (max-width: 480px) {
+        @media (min-width: 360px) and (max-width: 520px) {
           .footer__logo {
-            width: 100px;
-            height: 100px;
+            width: 110px;
+            height: 110px;
           }
         }
           .footer__title {
-            font-size: 40px;
+            font-size: 50px;
             font-weight: 600; 
             margin-top: 15px;  
-            color: white;
+            color: $color-text-quaternary;
         }
 
-        @media (min-width: 360px) and (max-width: 480px) {
+        @media (min-width: 360px) and (max-width: 520px) {
           .footer__title {
-            font-size: 26px;
+            font-size: 28px;
+          }
+        }
+
+        @media (min-width: 520px) and (max-width: 640px) {
+          .footer__title {
+            font-size: 34px;
+          }
+        }
+
+        @media (min-width: 640px) and (max-width: 768px) {
+          .footer__title {
+            font-size: 40px;
+          }
+        }
+
+        @media (min-width: 768px) and (max-width: 992px) {
+          .footer__title {
+            font-size: 44px;
           }
         }
 
         .footer__title::selection {
-            color: #EBFF00;
+            color: $color-text-heptenary;
         }
         
         .footer__text {
             margin-top: 15px;
-            font-size: 20px;
+            font-size: 22px;
             color: white;
         }
 
-        @media (min-width: 360px) and (max-width: 480px) {
+        @media (min-width: 360px) and (max-width: 520px) {
+          .footer__text {
+            font-size: 16px;
+            font-weight: 400;
+          }
+        }
+
+        @media (min-width: 520px) and (max-width: 640px) {
           .footer__text {
             font-size: 18px;
           }
         }
         
         .footer__text::selection {
-            color: #EBFF00;
+            color: $color-text-heptenary;
         }
   }
   
   .footer__content { /*Todos los contenedores hijos*/
     display: flex;
     flex-direction: column;
-    margin-top: 120px;
+    margin-top: 145px;
   
       .footer__lists {
         display: flex;
@@ -64,20 +89,26 @@
         gap: 14px;
         margin-top: 15px;
       }
-  
+
         .footer__subtitle {
           font-size: 32px;
-          color: white;
+          color: $color-text-quaternary;
         }
 
-        @media (min-width: 360px) and (max-width: 480px) {
+        @media (min-width: 360px) and (max-width: 520px) {
           .footer__subtitle {
-            font-size: 28px;
+            font-size: 22px;
+          }
+        }
+        
+        @media (min-width: 520px) and (max-width: 640px) {
+          .footer__subtitle {
+            font-size: 24px;
           }
         }
     
           .footer__subtitle::selection {
-            color: #EBFF00;
+            color: $color-text-heptenary;
           }
   
             .footer__links {
@@ -87,10 +118,10 @@
               gap: 12px;
               text-decoration: none;
               font-size: 22px;
-              color: white;
+              color: $color-text-quaternary;
             }
 
-            @media (min-width: 360px) and (max-width: 480px) {
+            @media (min-width: 360px) and (max-width: 520px) {
               .footer__links {
                 font-size: 18px;
                 font-weight: 500;
@@ -98,50 +129,50 @@
             }
         
               .footer__links::selection {
-                color: #DB9191;
+                color: $color-text-octenary;
               }
         
                 .footer__links:hover {
                   opacity: .8;
-                  color: #FFB800;
+                  color: $color-text-secondary;
                 }
         
                   .footer__links--spotify:hover {
-                    color: rgb(87, 252, 87);
+                    color: $color-text-terciary;
                   }
             }
 
-            @media (min-width: 360px) and (max-width: 480px) {
+            @media (min-width: 360px) and (max-width: 520px) {
               .footer__content {
-                margin-top: 20px;
+                margin-top: 10px;
               }
             }
             
-  
   .footer__copyright { /*Ultimo Contenedor de Terminos y Condiciones*/
     text-align: center;
   
     .footer__line {
-      color: white;
+      color: $color-text-quaternary;
     }
   
       .footer__rights {
+        display: inline;
         margin-top: 25px;
         font-size: 18px;
         cursor: pointer;
-        color: #FFB800; 
+        color: $color-text-secondary; 
       }
   
         .footer__rights:hover {
-          color: white;
+          color: $color-text-quaternary;
         }
     
         .footer__rights::selection {
-          color: #DB9191;
+          color: $color-text-octenary;
         }
   
         .footer__name::selection {
-          color: #DB9191;
+          color: $color-text-octenary;
       } 
   
     }
