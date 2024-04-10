@@ -14,7 +14,7 @@
           font-size: 40px;
           font-weight: bold;
           font-weight: 600;
-          color: black;
+          color: $color-text-quinternary;
         }
 
             .container__text {
@@ -22,7 +22,7 @@
               font-size: 22px;
               margin-top: 10px;
               font-weight: 400;
-              color: black;
+              color: $color-text-quinternary;
             } 
 
 .cartas__container { 
@@ -117,13 +117,13 @@
       font-size: 22px;
       font-weight: bold;
       margin-top: 10px;
-      color: black;
+      color: $color-text-quinternary;
     }
 
       .carta__text {
         margin: 5px 0px;
         font-size: 18px;
-        color: black;
+        color: $color-text-quinternary;
         max-width: 250px;
       }
 

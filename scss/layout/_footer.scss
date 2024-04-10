@@ -1,10 +1,10 @@
-.footer { /*Primer Padre Footer*/
+.footer { 
     width: 100%;
   
-    .footer__background { /*Segundo Padre Footer Background*/
+    .footer__background { 
       background-color: $background-color-quaternary;
   
-      .footer__container { /*Padre Contenedor del primer Bloque*/
+      .footer__container { 
         max-width: 500px;
   
         .footer__logo {
@@ -78,7 +78,7 @@
         }
   }
   
-  .footer__content { /*Todos los contenedores hijos*/
+  .footer__content { 
     display: flex;
     flex-direction: column;
     margin-top: 145px;
@@ -148,7 +148,7 @@
               }
             }
             
-  .footer__copyright { /*Ultimo Contenedor de Terminos y Condiciones*/
+  .footer__copyright { 
     text-align: center;
   
     .footer__line {

@@ -14,7 +14,7 @@
       .shows__title {
         font-size: 60px;
         font-weight: 600;
-        color: #000018;
+        color: $color-text-january;
       }
 
       @media (min-width: 360px) and (max-width: 768px) { 
@@ -26,7 +26,12 @@
 
       .shows__text {
         font-size: 28px;
-        color: orange;
+        color: $color-text-secondary;
+      }
+
+      .shows__text::selection {
+        background-color: $background-color-primary;
+        color: $color-text-quinternary;
       }
 
       @media (min-width: 360px) and (max-width: 768px) { 
@@ -41,12 +46,13 @@
         gap: 30px;
 
         .shows__button--primary:hover {
-          background: #09f;
+          background-color: $background-color-secondary;
+          color: $color-hover-primary;
         }
         
           .shows__button--secondary:hover {
-            background:#000018;
-            color: wheat;
+            background-color: $background-color-secondary;
+            color: $color-hover-primary;
           }
       }
 
@@ -99,7 +105,7 @@
   .acordeon__shows-subtitle { 
     font-size: 40px;
     font-weight: bold;
-    color: orange;
+    color: $color-text-secondary;
   }
     .acordeon__shows-list {
       width: 450px;

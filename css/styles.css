@@ -390,7 +390,7 @@ a, p {
 
 /* Areas de Tarjetas*/
 
-.tarjeta__guillermo {
+/*.tarjeta__guillermo {
     grid-area: Guillermo;
 }
 
@@ -412,7 +412,7 @@ a, p {
 
 .tarjeta__hector {
     grid-area: Hector;
-} 
+} */
 
 /*Medias Queries Areas*/
 
@@ -1108,7 +1108,7 @@ a, p {
 
 /* Inicio Footer (Responsive con Bootstrap) */  
 
-.footer {
+/*.footer {
     width: 100%;
 }
 
@@ -1213,6 +1213,6 @@ a, p {
 
 .footer__name::selection {
     color: #DB9191;
-} 
+} */
 
 /* Fin CSS Footer (Responsive con Bootstrap) */
