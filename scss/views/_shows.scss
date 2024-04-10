@@ -6,7 +6,7 @@
     height: 1000px;
     padding: 10% 10%;
 
-    .shows__container { /*Segundo Contenedor Subprincipal*/
+    .shows__container { 
         display: flex;
         flex-direction: column;
         max-width: 600px;
@@ -17,7 +17,7 @@
         color: #000018;
       }
 
-      @media (min-width: 360px) and (max-width: 768px) { /*Medias Title*/
+      @media (min-width: 360px) and (max-width: 768px) { 
         .shows__title {
           font-size: 40px;
           font-weight: bold;
@@ -29,14 +29,14 @@
         color: orange;
       }
 
-      @media (min-width: 360px) and (max-width: 768px) { /*Medias Texts*/
+      @media (min-width: 360px) and (max-width: 768px) { 
         .shows__text {
           font-weight: bold;
           font-size: 22px;
         }
       }       
 
-      .shows__buttons { /*Tercer Contenedor Buttons*/
+      .shows__buttons { 
         display: flex;
         gap: 30px;
 
@@ -50,7 +50,7 @@
           }
       }
 
-      @media (max-width: 480px) { /*Medias Buttons*/
+      @media (max-width: 480px) { 
         .shows__buttons {
           flex-direction: column;
           gap: 10px;
@@ -63,7 +63,7 @@
           text-align: center;
         }
 
-        @media (max-width: 480px) { /*Medias Shows_button*/
+        @media (max-width: 480px) { 
           .shows__button {
             flex-direction: column;
             max-width: 180px;
@@ -78,20 +78,20 @@
         }
     }
 
-      @media (min-width: 720px) { /*Medias Shows__Container*/
+      @media (min-width: 720px) { 
         .shows__container {
           max-width: 800px;
         }
       }
 }
 
-@media (min-width: 360px) { /*Medias Shows*/
+@media (min-width: 360px) {
     .shows {
         height: auto;
     }
 }
 
-.acordeon__shows { /*Gran Contenedor Padre Acordeones Principal */
+.acordeon__shows { 
     display: flex;
     align-items: flex-start;
     gap: 60px;
@@ -105,26 +105,26 @@
       width: 450px;
     }
 
-    @media (max-width: 520px) { /*Medias Acordeon_Shows_List*/
+    @media (max-width: 520px) { 
         .acordeon__shows-list {
             width: 300px;
         }
     }
 
-    @media (min-width: 360px) and (max-width: 520px) { /*Medias Acordeon__Shows_Title*/
+    @media (min-width: 360px) and (max-width: 520px) { 
         .acordeon__shows-title {
             font-size: 18px;
         }
     }
     
-    @media (min-width: 360px) and (max-width: 520px) { /*Medias Acordeon__Shows_Text*/
+    @media (min-width: 360px) and (max-width: 520px) { 
         .acordeon__shows-text {
             font-size: 14px;
         }
     }
 }
 
-@media (min-width: 360px) { /*Medias Acordeon__Shows*/
+@media (min-width: 360px) { 
     .acordeon__shows {
         gap: 40px;
         padding-top: 30px;

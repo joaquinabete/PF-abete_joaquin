@@ -1,7 +1,7 @@
-.form { /*Gran Contenedor Padre Principal*/
+.form { 
     margin: 40px;
 
-  .form__container { /*Segundo Contenedor Form*/
+  .form__container { 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,7 +18,7 @@
         color: white;
     }
 
-    @media (min-width: 480px) and (max-width: 768px) { /*Medias Title*/
+    @media (min-width: 480px) and (max-width: 768px) { 
       .form__title {
         font-size: 30px; 
       }
@@ -30,7 +30,7 @@
       }
     }
 
-    .form__content { /*Tercer Contenedor Inputs*/
+    .form__content { 
         display: flex;
         flex-direction: column;
         padding-top: 15px;
@@ -42,7 +42,7 @@
         color: white;
       }
 
-      @media (min-width: 480px) and (max-width: 768px) { /*Medias Label*/
+      @media (min-width: 480px) and (max-width: 768px) { 
         .form__label {
           font-size: 20px; 
         }
@@ -63,7 +63,7 @@
         width: 350px;
       }
 
-      @media (min-width: 480px) and (max-width: 768px) { /*Medias Input*/
+      @media (min-width: 480px) and (max-width: 768px) { 
         .form__input {
           max-width: 280px;
         }
@@ -76,7 +76,7 @@
       }
     }
 
-.form__terms { /*Cuarto Contenedor Terms*/
+.form__terms { 
   display: flex;
   flex-direction: column;
   margin-top: 15px;
@@ -86,7 +86,7 @@
     height: 16px;  
   }
 
-  @media (min-width: 480px)  and (max-width: 768px) { /*Medias Checkbox*/
+  @media (min-width: 480px)  and (max-width: 768px) { 
     .form__checkbox {
       width: 12px;
       height: 12px;
@@ -106,7 +106,7 @@
     max-width: 350px;
   }
 
-  @media (min-width: 480px)  and (max-width: 768px) { /*Medias Text*/
+  @media (min-width: 480px)  and (max-width: 768px) { 
     .form__text {
       font-size: 16px;
     }
@@ -118,7 +118,7 @@
     }
   } 
 
-.form__buttons { /*Quinto Contenedor Form_Buttons*/
+.form__buttons { 
   display: flex;
   gap: 30px;
 
@@ -138,7 +138,7 @@
     }
   }
 
-  @media (min-width: 480px)  and (max-width: 768px) { /*Medias Form__Buttons*/
+  @media (min-width: 480px)  and (max-width: 768px) { 
     .form__button {
       padding: 6px 20px;
     }
@@ -159,7 +159,7 @@
   }
 }
 
-@media (min-width: 480px) and (max-width: 768px) { /*Medias Form__Container*/
+@media (min-width: 480px) and (max-width: 768px) { 
   .form__container {
     align-items: flex-start;
     max-width: 350px;

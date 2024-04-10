@@ -1,4 +1,4 @@
-.container { /*Gran Contenedor Padre Titulos*/
+.container { 
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -25,7 +25,7 @@
               color: black;
             } 
 
-.cartas__container { /*Segundo Contenedor Padre Cartas*/
+.cartas__container { 
   width: 100%;
   display: grid;
   grid-template-columns: 300px 300px 300px;
@@ -36,7 +36,7 @@
 
 }
 
- @media (min-width: 768px) and (max-width: 1024px) {  /*Medias Titulos y Cartas*/
+ @media (min-width: 768px) and (max-width: 1024px) {  
 
     .container {
         margin: 0 auto;
@@ -59,7 +59,7 @@
     }
 }
 
-@media (min-width: 640px) and (max-width: 768px) { /*Medias Titulos y Cartas*/
+@media (min-width: 640px) and (max-width: 768px) { 
     
     .container {
         margin: 0 auto;
@@ -83,7 +83,7 @@
     }
 } 
 
-@media (min-width: 360px) and (max-width: 640px) { /*Medias Titulos y Cartas*/
+@media (min-width: 360px) and (max-width: 640px) { 
 
     .container {
         margin: 0 auto;
@@ -106,7 +106,7 @@
     }
 }
 
-.carta { /*Tercer Contenedor Cartas*/
+.carta { 
   .carta__image {
     width: 250px;
     height: 250px;
@@ -133,7 +133,7 @@
           padding: 10px 40px;
         }
 
-        @media (min-width: 360px) and (max-width: 480px) { /*Medias Cartas__Button*/
+        @media (min-width: 360px) and (max-width: 480px) { 
             .carta__button {
                 padding: 6px 20px;
             }

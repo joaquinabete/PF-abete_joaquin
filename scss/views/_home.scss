@@ -1,4 +1,4 @@
-.hero { /*Gran Padre Hero*/
+.hero { 
   background-image: url(../assets/images/home/hero.webp);
   background-repeat: repeat;
   background-size: cover;
@@ -13,7 +13,7 @@
     color: black;
   }
 
-@media (min-width: 768px) and (max-width: 1024px) { /*Medias Hero__Title*/
+@media (min-width: 768px) and (max-width: 1024px) { 
     .hero__title {
       font-size: 50px;
     }
@@ -42,7 +42,7 @@
       color: #000018;
     }
   
-.hero__buttons { /*Segundo Contenedor Hero__Buttons*/
+.hero__buttons { 
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -50,7 +50,7 @@
   margin-top: 30px;
 }
   
-@media (min-width: 640px) and (max-width: 768px) { /*Medias Hero__Buttons*/
+@media (min-width: 640px) and (max-width: 768px) { 
     .hero__buttons {
       flex-direction: column;
       max-width: 250px;
@@ -76,7 +76,7 @@
   padding: 15px 30px;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) { /*Medias Button [Se Alojan en Components]*/
+@media (min-width: 768px) and (max-width: 1024px) { 
   .button {
     padding: 12px 20px;
     margin-top: 40px;
@@ -110,7 +110,7 @@
 
 }
 
-.article { /*Primer Gran Padre Article Cartas Integrantes*/
+.article { 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -131,13 +131,13 @@
     }
 }
 
-@media (min-width: 360px) { /*Medias Article Cartas Integrantes*/
+@media (min-width: 360px) { 
   .article {
       margin: 0 auto;
       margin-bottom: 20px;
   }
 
-.article__container { /* Segundo Bloque Padre Article_Container*/
+.article__container { 
   display: flex;
   flex-direction: row;
   gap: 40px;
@@ -159,7 +159,7 @@
       border-radius: 12px;
     }
 
-    @media (min-width: 360px) {  /*Medias Article__Image*/
+    @media (min-width: 360px) {  
       .article__image {
           width: 250px;
           height: 250px;
@@ -174,7 +174,7 @@
     }
 }
 
-@media (min-width: 360px)  {  /*Medias Article__Container*/
+@media (min-width: 360px)  {  
   .article__container {
     flex-direction: column;
   }   
@@ -186,7 +186,7 @@
   }   
 }
 
-.article__content { /* Tercer Bloque Padre Contenido de Integrantes [Article__Content] */
+.article__content { 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -199,7 +199,7 @@
       color: white;
     }
 
-@media (min-width: 360px) { /*Medias Title*/
+@media (min-width: 360px) { 
   .article__title {
     font-size: 40px;
     font-weight: 600;
@@ -219,14 +219,14 @@
   }
 }
 
-@media (min-width: 1024px) { /*Fin de Medias Title*/
+@media (min-width: 1024px) {
   .article__title {
     text-align: left;
     font-size: 44px;
   }
 }
 
-@media (min-width: 360px) { /*Medias Text*/
+@media (min-width: 360px) { 
   .article__text {
     font-size: 26px;
     text-align: center;
@@ -246,14 +246,14 @@
   }
 }
 
-@media (min-width: 1024px) { /*Fin de Medias Text*/
+@media (min-width: 1024px) { 
   .article__text {
     text-align: left;
     font-size: 28px;
   }
 }
 
-.article__buttons { /*Subbloque de la tercer clase Padre [article__content]*/
+.article__buttons { 
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -263,7 +263,7 @@
   }
 }
 
-@media (min-width: 360px) { /*Medias Buttons por dentro*/
+@media (min-width: 360px) { 
   .article__button {
     font-size: 16px;
   }
@@ -275,7 +275,7 @@
   }
 }
 
-@media (min-width: 360px) { /*Medias contenedor de Buttons*/
+@media (min-width: 360px) { 
   .article__buttons {
     gap: 10px;
   }
@@ -300,7 +300,7 @@
  }
 } 
 
-@media (min-width: 360px) { /*Medias Article__Content*/
+@media (min-width: 360px) { 
   .article__content {
     max-width: 300px;
     margin-bottom: 20px;
