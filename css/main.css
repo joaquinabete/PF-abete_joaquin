@@ -190,14 +190,14 @@ body {
     box-shadow: 1px 1px 12px 2px black;
     background-color: #000018;
   }
-  .article__container__logo {
+  .article__container .article__logo {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 20px 0;
   }
-  .article__container__image {
+  .article__container .article__image {
     width: 250px;
     height: 250px;
     border-radius: 12px;

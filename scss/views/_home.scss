@@ -140,12 +140,12 @@
   box-shadow: $box-shadow;
   background-color: $background-color-secondary;
 
-  &__logo {
+  .article__logo {
     @include flex-row-center;
     padding: 20px 0;
   }
 
-    &__image {
+    .article__image {
       width: 250px;
       height: 250px;
       border-radius: 12px;
