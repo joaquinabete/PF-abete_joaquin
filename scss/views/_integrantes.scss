@@ -4,10 +4,16 @@
   color: $color-text-quinternary;
 }
 
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   .tarjeta__titulo {
     font-size: 28px;
     padding-top: 40px;
+  }
+}
+
+@media (min-width: 410px) {
+  .tarjeta__titulo {
+    font-size: 32px;
   }
 }
 
@@ -32,12 +38,10 @@
 .tarjeta { 
     @include flex-row-center;
     padding: 40px;
-    gap: 60px;
+    
     
     .tarjeta__content { 
       @include flex-column-center;
-      width: 300px;
-      height: 350px;
       padding: 20px;
       border-radius: 12px;
       box-shadow: $box-shadow;
@@ -45,30 +49,103 @@
       transition: all .4s ease;
 
       .tarjeta__image {
-        width: 150px;
-        height: 150px;
         border-radius: 50%;
       }
 
+      @media (min-width: 320px) {
+        .tarjeta__image {
+          width: 90px;
+          height: 90px;
+        }
+      }
+
+      @media (min-width: 680px) and (max-width: 1024px) {
+        .tarjeta__image {
+          width: 120px;
+          height: 120px;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .tarjeta__image {
+          width: 150px;
+          height: 150px;
+        }
+      }
         .tarjeta__title {
           padding-top: 20px;
           font-size: 20px;
           font-weight: 700;
           color: $color-text-heptenary;
         }
-    
+
+        @media (min-width: 320px) {
+          .tarjeta__title {
+            font-size: 16px;
+          }
+        }
+
+        @media (min-width: 1024px) {
+          .tarjeta__title {
+            font-size: 20px;
+          }
+        }
           .tarjeta__text {
             text-align: center;
             color: $color-text-heptenary;
           }
+
+          @media (min-width: 320px) {
+            .tarjeta__text {
+              font-size: 14px;
+            }
+          }
+
+          @media (min-width: 1024px) {
+            .tarjeta__text {
+              font-size: 18px;
+            }
+          }
+  }
+
+  @media (min-width: 320px) {
+    .tarjeta__content {
+      width: 260px;
+      height: 300px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .tarjeta__content {
+      width: 300px;
+      height: 350px;
+    }
   }
 
   .tarjeta__content:hover {
     transform: scale(1.2);
   }
+
+  @media (min-width: 320px) {
+    .tarjeta__content:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media (min-width: 320px) {
+  .tarjeta {
+    gap: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tarjeta {
+    gap: 40px;
+  }
 }
   
-@media (min-width: 360px) and (max-width: 680px) {
+@media (min-width: 320px) and (max-width: 680px) {
     .tarjeta {
         display: grid;
         grid-template-areas: 
@@ -116,7 +193,7 @@
       color: $color-text-quinternary;
     }
 
-    @media (min-width: 360px) {
+    @media (min-width: 320px) {
         .acordeon__biographies {
             text-align: center;
             font-size: 36px;
@@ -125,10 +202,16 @@
     
     @media (min-width: 480px) {
         .acordeon__biographies {
-            font-size: 40px;
+            font-size: 42px;
         }
     }
     
+    @media (min-width: 503px) {
+      .acordeon__biographies {
+          font-size: 40px;
+      }
+  }
+
     @media (min-width: 640px) {
         .acordeon__biographies {
             font-size: 46px;
@@ -164,7 +247,7 @@
               color: $color-text-secondary;
             }
 
-@media (min-width: 360px) { 
+@media (min-width: 320px) { 
     .acordeon__title {
         font-size: 18px;
     }
@@ -188,7 +271,7 @@
     }
 }
         
-@media (min-width: 360px) { 
+@media (min-width: 320px) { 
     .acordeon__text {
         font-size: 14px;
         font-weight: bold;
@@ -210,15 +293,33 @@
   }
 }
 
-@media (min-width: 360px) { 
+@media (min-width: 320px) {
+  .acordeon__list {
+    padding: 15px 20px;
+  }
+}
+
+@media (min-width: 420px) {
+  .acordeon__list {
+    padding: 20px 25px;
+  }
+}
+
+@media (min-width: 320px) { 
   .acordeon__list {
     width: 300px;
   }
 }
 
+@media (min-width: 420px) {
+  .acordeon__list {
+    width: 350px;
+  }
+}
+
 @media (min-width: 480px) {
   .acordeon__list {
-    width: 430px;
+    width: 400px;
   }
 }
 
@@ -243,11 +344,29 @@
 .acordeon__list:hover { 
     transform: scale(1.1);
   } 
+
+  @media (min-width: 320px) {
+    .acordeon__list:hover {
+      transform: scale(0.9);
+    }
+  }
+
+  @media (min-width: 380px) {
+    .acordeon__list:hover {
+      transform: scale(1.1);
+    }
+  }
 }
 
-@media (min-width: 360px) { 
+@media (min-width: 320px) { 
   .acordeon {
-    gap: 35px;
+    gap: 25px;
+  }
+}
+
+@media (min-width: 380px) { 
+  .acordeon {
+    gap: 30px;
   }
 }
 
