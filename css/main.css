@@ -754,12 +754,12 @@ body {
     grid-template-columns: auto auto;
   }
 }
-@media (min-width: 360px) and (max-width: 640px) {
+@media (min-width: 320px) and (max-width: 640px) {
   .container .container {
     margin: 0 auto;
   }
   .container .container__description {
-    max-width: 300px;
+    max-width: 250px;
   }
   .container .container__title {
     font-size: 20px;
@@ -777,7 +777,7 @@ body {
   border-radius: 8px;
 }
 .container .carta .carta__title {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
   margin-top: 10px;
   color: #000000;
@@ -793,7 +793,7 @@ body {
   margin-top: 12px;
   padding: 10px 40px;
 }
-@media (min-width: 360px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .container .carta .carta__button {
     padding: 6px 20px;
   }

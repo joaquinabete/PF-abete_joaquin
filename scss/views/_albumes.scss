@@ -79,14 +79,14 @@
     }
 } 
 
-@media (min-width: 360px) and (max-width: 640px) { 
+@media (min-width: 320px) and (max-width: 640px) { 
 
     .container {
         margin: 0 auto;
     }
 
-    .container__description{
-        max-width: 300px;
+    .container__description {
+        max-width: 250px;
     }
 
     .container__title {
@@ -110,7 +110,7 @@
 }
 
     .carta__title {
-      font-size: 22px;
+      font-size: 20px;
       font-weight: bold;
       margin-top: 10px;
       color: $color-text-quinternary;
@@ -129,7 +129,7 @@
           padding: 10px 40px;
         }
 
-        @media (min-width: 360px) and (max-width: 480px) { 
+        @media (min-width: 320px) and (max-width: 480px) { 
             .carta__button {
                 padding: 6px 20px;
             }
