@@ -936,7 +936,7 @@ body {
   }
 }
 .form {
-  margin: 40px;
+  padding: 80px;
 }
 .form .form__container {
   display: flex;
@@ -959,9 +959,9 @@ body {
     font-size: 30px;
   }
 }
-@media (min-width: 360px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .form .form__container .form__title {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 .form .form__container .form__content {
@@ -971,7 +971,7 @@ body {
 }
 .form .form__container .form__content .form__label {
   font-size: 24px;
-  margin-bottom: 5px;
+  padding-bottom: 5px;
   font-weight: 600;
   color: #fff;
 }
@@ -980,7 +980,7 @@ body {
     font-size: 20px;
   }
 }
-@media (min-width: 360px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .form .form__container .form__content .form__label {
     font-size: 16px;
   }
@@ -997,7 +997,7 @@ body {
     max-width: 280px;
   }
 }
-@media (min-width: 360px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .form .form__container .form__content .form__input {
     max-width: 200px;
   }
@@ -1017,7 +1017,7 @@ body {
     height: 12px;
   }
 }
-@media (min-width: 360px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .form .form__container .form__terms .form__checkbox {
     width: 10px;
     height: 10px;
@@ -1033,7 +1033,7 @@ body {
     font-size: 16px;
   }
 }
-@media (min-width: 360px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .form .form__container .form__terms .form__text {
     font-size: 14px;
   }
@@ -1050,7 +1050,7 @@ body {
     padding: 6px 20px;
   }
 }
-@media (min-width: 360px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .form .form__container .form__terms .form__buttons .form__button {
     padding: 6px 16px;
   }
@@ -1065,7 +1065,7 @@ body {
   color: #f5deb3;
   transition: all 0.6s;
 }
-@media (min-width: 360px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .form .form__container .form__terms .form__buttons {
     gap: 12px;
   }
@@ -1081,13 +1081,23 @@ body {
     max-width: 350px;
   }
 }
-@media (min-width: 360px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .form .form__container {
-    align-items: flex-start;
-    max-width: 300px;
+    align-items: center;
+    max-width: 250px;
   }
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  .form {
+    padding: 30px;
+  }
+}
+@media (min-width: 480px) and (max-width: 520px) {
+  .form {
+    padding: 40px;
+  }
+}
 .footer {
   width: 100%;
 }
