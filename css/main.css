@@ -85,7 +85,7 @@ body {
     font-size: 46px;
   }
 }
-@media (min-width: 360px) and (max-width: 640px) {
+@media (min-width: 320px) and (max-width: 640px) {
   .hero .hero__title {
     font-size: 40px;
     padding-top: 80px;
@@ -105,7 +105,7 @@ body {
   flex-direction: row;
   justify-content: center;
   gap: 40px;
-  margin-top: 30px;
+  padding-top: 30px;
 }
 @media (min-width: 640px) and (max-width: 768px) {
   .hero .hero__buttons {
@@ -114,10 +114,10 @@ body {
     margin: 0 auto;
     gap: 20px;
     text-align: center;
-    margin-top: 60px;
+    padding-top: 60px;
   }
 }
-@media (min-width: 360px) and (max-width: 640px) {
+@media (min-width: 320px) and (max-width: 640px) {
   .hero .hero__buttons {
     flex-direction: column;
     max-width: 200px;
@@ -142,7 +142,7 @@ body {
     font-size: 18px;
   }
 }
-@media (min-width: 360px) and (max-width: 640px) {
+@media (min-width: 320px) and (max-width: 640px) {
   .hero .button {
     padding: 8px 14px;
     font-size: 14px;
@@ -172,14 +172,19 @@ body {
   text-align: center;
   color: #000018;
 }
+@media (min-width: 320px) and (max-width: 480px) {
+  .article__maintitle {
+    font-size: 30px;
+  }
+}
 .article__maintitle::selection {
   color: #EBFF00;
 }
 
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   .article {
     margin: 0 auto;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
   }
   .article__container {
     display: flex;
@@ -203,29 +208,29 @@ body {
     border-radius: 12px;
   }
 }
-@media (min-width: 360px) and (min-width: 360px) {
+@media (min-width: 320px) and (min-width: 320px) {
   .article__container .article__image {
     width: 250px;
     height: 250px;
   }
 }
-@media (min-width: 360px) and (min-width: 640px) {
+@media (min-width: 320px) and (min-width: 640px) {
   .article__container .article__image {
     width: 300px;
     height: 300px;
   }
 }
-@media (min-width: 360px) and (min-width: 360px) {
+@media (min-width: 320px) and (min-width: 320px) {
   .article__container {
     flex-direction: column;
   }
 }
-@media (min-width: 360px) and (min-width: 768px) {
+@media (min-width: 320px) and (min-width: 768px) {
   .article__container {
     flex-direction: row;
   }
 }
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   .article__content {
     display: flex;
     flex-direction: column;
@@ -238,53 +243,53 @@ body {
     color: #fff;
   }
 }
-@media (min-width: 360px) and (min-width: 360px) {
+@media (min-width: 320px) and (min-width: 320px) {
   .article__content .article__title {
     font-size: 40px;
     font-weight: 600;
     text-align: center;
   }
 }
-@media (min-width: 360px) and (min-width: 640px) {
+@media (min-width: 320px) and (min-width: 640px) {
   .article__content .article__title {
     font-size: 38px;
   }
 }
-@media (min-width: 360px) and (min-width: 768px) {
+@media (min-width: 320px) and (min-width: 768px) {
   .article__content .article__title {
     font-size: 36px;
   }
 }
-@media (min-width: 360px) and (min-width: 1024px) {
+@media (min-width: 320px) and (min-width: 1024px) {
   .article__content .article__title {
     text-align: left;
     font-size: 44px;
   }
 }
-@media (min-width: 360px) and (min-width: 360px) {
+@media (min-width: 320px) and (min-width: 320px) {
   .article__content .article__text {
     font-size: 26px;
     text-align: center;
   }
 }
-@media (min-width: 360px) and (min-width: 640px) {
+@media (min-width: 320px) and (min-width: 640px) {
   .article__content .article__text {
     font-size: 22px;
   }
 }
-@media (min-width: 360px) and (min-width: 768px) {
+@media (min-width: 320px) and (min-width: 768px) {
   .article__content .article__text {
     text-align: center;
     font-size: 18px;
   }
 }
-@media (min-width: 360px) and (min-width: 1024px) {
+@media (min-width: 320px) and (min-width: 1024px) {
   .article__content .article__text {
     text-align: left;
     font-size: 28px;
   }
 }
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   .article__content .article__buttons {
     display: flex;
     flex-direction: row;
@@ -294,56 +299,64 @@ body {
     padding: 12px 40px;
   }
 }
-@media (min-width: 360px) and (min-width: 360px) {
+@media (min-width: 320px) and (min-width: 320px) {
   .article__content .article__button {
-    font-size: 16px;
+    font-size: 22px;
   }
 }
-@media (min-width: 360px) and (min-width: 640px) {
+@media (min-width: 320px) and (min-width: 640px) {
   .article__content .article__button {
     font-size: 20px;
   }
 }
-@media (min-width: 360px) and (min-width: 360px) {
+@media (min-width: 320px) and (min-width: 320px) {
   .article__content .article__buttons {
-    gap: 10px;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
   }
 }
-@media (min-width: 360px) and (min-width: 480px) and (max-width: 640px) {
+@media (min-width: 320px) and (min-width: 480px) and (max-width: 640px) {
   .article__content .article__buttons {
     gap: 20px;
   }
 }
-@media (min-width: 360px) and (min-width: 640px) {
+@media (min-width: 320px) and (min-width: 640px) {
   .article__content .article__buttons {
     gap: 30px;
   }
 }
-@media (min-width: 360px) and (min-width: 1024px) {
+@media (min-width: 320px) and (min-width: 768px) {
+  .article__content .article__buttons {
+    gap: 30px;
+    flex-direction: row;
+  }
+}
+@media (min-width: 320px) and (min-width: 1024px) {
   .article__content .article__buttons {
     justify-content: flex-start;
   }
 }
-@media (min-width: 360px) and (min-width: 360px) {
+@media (min-width: 320px) and (min-width: 320px) {
   .article__content {
-    max-width: 300px;
+    max-width: 250px;
     margin-bottom: 20px;
   }
 }
-@media (min-width: 360px) and (min-width: 640px) {
+@media (min-width: 320px) and (min-width: 640px) {
   .article__content {
     max-width: 400px;
   }
 }
-@media (min-width: 360px) and (min-width: 768px) {
+@media (min-width: 320px) and (min-width: 992px) {
   .article__content {
     max-width: 600px;
-    margin-top: 40px;
+    padding-top: 20px;
   }
 }
-@media (min-width: 360px) and (min-width: 1024px) {
+@media (min-width: 320px) and (min-width: 1024px) {
   .article__content {
-    max-width: 900px;
+    max-width: 800px;
   }
 }
 .tarjeta__titulo {
@@ -1112,7 +1125,7 @@ body {
   height: 140px;
   border-radius: 50%;
 }
-@media (min-width: 360px) and (max-width: 520px) {
+@media (min-width: 320px) and (max-width: 520px) {
   .footer .footer__background .footer__container .footer__logo {
     width: 110px;
     height: 110px;
@@ -1124,7 +1137,7 @@ body {
   margin-top: 15px;
   color: #fff;
 }
-@media (min-width: 360px) and (max-width: 520px) {
+@media (min-width: 320px) and (max-width: 520px) {
   .footer .footer__background .footer__container .footer__title {
     font-size: 28px;
   }
@@ -1152,7 +1165,7 @@ body {
   font-size: 22px;
   color: white;
 }
-@media (min-width: 360px) and (max-width: 520px) {
+@media (min-width: 320px) and (max-width: 520px) {
   .footer .footer__background .footer__container .footer__text {
     font-size: 16px;
     font-weight: 400;
@@ -1169,6 +1182,8 @@ body {
 .footer .footer__background .footer__content {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   margin-top: 145px;
 }
 .footer .footer__background .footer__content .footer__lists {
@@ -1187,7 +1202,7 @@ body {
   font-size: 32px;
   color: #fff;
 }
-@media (min-width: 360px) and (max-width: 520px) {
+@media (min-width: 320px) and (max-width: 520px) {
   .footer .footer__background .footer__content .footer__subtitle {
     font-size: 22px;
   }
@@ -1209,7 +1224,7 @@ body {
   font-size: 22px;
   color: #fff;
 }
-@media (min-width: 360px) and (max-width: 520px) {
+@media (min-width: 320px) and (max-width: 520px) {
   .footer .footer__background .footer__content .footer__links {
     font-size: 18px;
     font-weight: 500;
@@ -1225,7 +1240,7 @@ body {
 .footer .footer__background .footer__content .footer__links--spotify:hover {
   color: #57fc57;
 }
-@media (min-width: 360px) and (max-width: 520px) {
+@media (min-width: 320px) and (max-width: 520px) {
   .footer .footer__background .footer__content {
     margin-top: 10px;
   }
