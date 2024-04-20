@@ -13,9 +13,9 @@
     background-color: $background-color-secondary;
 
     .form__title {
-        font-size: 40px;
-        font-weight: bold;
-        color: $color-text-quaternary;
+      font-size: 40px;
+      font-weight: bold;
+      color: $color-text-quaternary;
     }
 
     @media (min-width: 480px) and (max-width: 768px) { 
@@ -31,9 +31,9 @@
     }
 
     .form__content { 
-        display: flex;
-        flex-direction: column;
-        padding-top: 15px;
+      display: flex;
+      flex-direction: column;
+      padding-top: 15px;
 
       .form__label {
         font-size: 24px;

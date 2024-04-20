@@ -36,76 +36,76 @@
 }
 
 .tarjeta { 
-    @include flex-row-center;
-    padding: 40px;
+  @include flex-row-center;
+  padding: 40px;
     
-    
-    .tarjeta__content { 
-      @include flex-column-center;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: $box-shadow;
-      background-color: $background-color-secondary; 
-      transition: all .4s ease;
+  .tarjeta__content { 
+    @include flex-column-center;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: $box-shadow;
+    transition: all .4s ease;
+    background-color: $background-color-secondary; 
 
+    .tarjeta__image {
+      border-radius: 50%;
+    }
+
+    @media (min-width: 320px) {
       .tarjeta__image {
-        border-radius: 50%;
+        width: 90px;
+        height: 90px;
+      }
+    }
+
+    @media (min-width: 680px) and (max-width: 1024px) {
+      .tarjeta__image {
+        width: 120px;
+        height: 120px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .tarjeta__image {
+        width: 150px;
+        height: 150px;
+      }
+    }
+      .tarjeta__title {
+        padding-top: 20px;
+        font-size: 20px;
+        font-weight: 700;
+        color: $color-text-heptenary;
       }
 
-      @media (min-width: 320px) {
-        .tarjeta__image {
-          width: 90px;
-          height: 90px;
-        }
+    @media (min-width: 320px) {
+      .tarjeta__title {
+        font-size: 16px;
       }
+    }
 
-      @media (min-width: 680px) and (max-width: 1024px) {
-        .tarjeta__image {
-          width: 120px;
-          height: 120px;
-        }
+    @media (min-width: 1024px) {
+      .tarjeta__title {
+        font-size: 20px;
       }
+    }
+    
+    .tarjeta__text {
+      text-align: center;
+      color: $color-text-heptenary;
+    }
 
-      @media (min-width: 1024px) {
-        .tarjeta__image {
-          width: 150px;
-          height: 150px;
-        }
+    @media (min-width: 320px) {
+      .tarjeta__text {
+        font-size: 14px;
       }
-        .tarjeta__title {
-          padding-top: 20px;
-          font-size: 20px;
-          font-weight: 700;
-          color: $color-text-heptenary;
-        }
+    }
 
-        @media (min-width: 320px) {
-          .tarjeta__title {
-            font-size: 16px;
-          }
-        }
-
-        @media (min-width: 1024px) {
-          .tarjeta__title {
-            font-size: 20px;
-          }
-        }
-          .tarjeta__text {
-            text-align: center;
-            color: $color-text-heptenary;
-          }
-
-          @media (min-width: 320px) {
-            .tarjeta__text {
-              font-size: 14px;
-            }
-          }
-
-          @media (min-width: 1024px) {
-            .tarjeta__text {
-              font-size: 18px;
-            }
-          }
+    @media (min-width: 1024px) {
+      .tarjeta__text {
+        font-size: 18px;
+      }
+    }
   }
 
   @media (min-width: 320px) {
@@ -146,46 +146,46 @@
 }
   
 @media (min-width: 320px) and (max-width: 680px) {
-    .tarjeta {
-        display: grid;
-        grid-template-areas: 
-            "Guillermo"
-            "Hugo"
-            "Michael"
-            "Grano"
-            "Cuico"
-            "Hector"
-        ; 
-    }
+  .tarjeta {
+    display: grid;
+    grid-template-areas: 
+      "Guillermo"
+      "Hugo"
+      "Michael"
+      "Grano"
+      "Cuico"
+      "Hector"
+      ; 
+  }
 }
 
 @media (min-width: 681px) and (max-width: 1024px) {
     .tarjeta {
-        display: grid;
-        grid-template-areas: 
-            "Guillermo Hugo"
-            "Michael Grano"
-            "Cuico Hector"
+      display: grid;
+      grid-template-areas: 
+        "Guillermo Hugo"
+        "Michael Grano"
+        "Cuico Hector"
         ; 
     }
 }
 
 @media (min-width: 1024px) {
-    .tarjeta {
-        display: grid;
-        grid-template-areas: 
-            "Guillermo Hugo Michael"
-            "Grano Cuico Hector"
-        ; 
-    }
+  .tarjeta {
+    display: grid;
+    grid-template-areas: 
+      "Guillermo Hugo Michael"
+      "Grano Cuico Hector"
+      ; 
+  }
 }
 
 .acordeon { 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding-bottom: 40px;   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 40px;   
 
     .acordeon__biographies {
       font-size: 60px;
@@ -194,34 +194,34 @@
     }
 
     @media (min-width: 320px) {
-        .acordeon__biographies {
-            text-align: center;
-            font-size: 36px;
-        }
+      .acordeon__biographies {
+        text-align: center;
+        font-size: 36px;
+      }
     }
     
     @media (min-width: 480px) {
-        .acordeon__biographies {
-            font-size: 42px;
-        }
+      .acordeon__biographies {
+        font-size: 42px;
+      }
     }
     
     @media (min-width: 503px) {
       .acordeon__biographies {
-          font-size: 40px;
+        font-size: 40px;
       }
-  }
+    }
 
     @media (min-width: 640px) {
-        .acordeon__biographies {
-            font-size: 46px;
-        }
+      .acordeon__biographies {
+        font-size: 46px;
+      }
     }   
     
     @media (min-width: 768px) {
-        .acordeon__biographies {
-            font-size: 52px;
-        }
+      .acordeon__biographies {
+        font-size: 52px;
+      }
     }
     
 .acordeon__list { 
@@ -231,66 +231,66 @@
   box-shadow: $box-shadow; 
   background-color: $background-color-secondary;
 
-        .acordeon__title {
-          font-size: 36px;
-          font-weight: 600;
-          cursor: pointer;
-          color: $color-text-sectenary;
-        }
-          .acordeon__title:hover {
-            color: $color-text-heptenary;
-        }   
-            .acordeon__text {
-              padding: 10px 0;
-              font-size: 20px;
-              font-weight: 400;
-              color: $color-text-secondary;
-            }
+  .acordeon__title {
+    font-size: 36px;
+    font-weight: 600;
+    cursor: pointer;
+    color: $color-text-sectenary;
+  }
+    .acordeon__title:hover {
+      color: $color-text-heptenary;
+    }   
+      .acordeon__text {
+        padding: 10px 0;
+        font-size: 20px;
+        font-weight: 400;
+        color: $color-text-secondary;
+      }
 
 @media (min-width: 320px) { 
-    .acordeon__title {
-        font-size: 18px;
-    }
+  .acordeon__title {
+    font-size: 18px;
+  }
 }
         
 @media (min-width: 480px) {
-    .acordeon__title {
-        font-size: 24px;
-    }
+  .acordeon__title {
+    font-size: 24px;
+  }
 }
         
 @media (min-width: 640px) {
-    .acordeon__title {
-        font-size: 28px;
-    }
+  .acordeon__title {
+    font-size: 28px;
+  }
 }
         
 @media (min-width: 768px) {
-    .acordeon__title {
-        font-size: 32px;
-    }
+  .acordeon__title {
+    font-size: 32px;
+  }
 }
         
 @media (min-width: 320px) { 
-    .acordeon__text {
-        font-size: 14px;
-        font-weight: bold;
-    }
+  .acordeon__text {
+    font-size: 14px;
+    font-weight: bold;
+  }
 }
         
 @media (min-width: 480px) {
-    .acordeon__text {
-        font-size: 18px;
-        font-weight: 300;
-    }
+  .acordeon__text {
+    font-size: 18px;
+    font-weight: 300;
+  }
 }
         
 @media (min-width: 640px) {
-    .acordeon__text {
-        font-size: 22px;
-        font-weight: 300;
-    } 
-  }
+  .acordeon__text {
+    font-size: 22px;
+    font-weight: 300;
+  } 
+ }
 }
 
 @media (min-width: 320px) {
@@ -342,20 +342,20 @@
 }
 
 .acordeon__list:hover { 
+  transform: scale(1.1);
+} 
+
+@media (min-width: 320px) {
+  .acordeon__list:hover {
+    transform: scale(0.9);
+  }
+}
+
+@media (min-width: 380px) {
+  .acordeon__list:hover {
     transform: scale(1.1);
-  } 
-
-  @media (min-width: 320px) {
-    .acordeon__list:hover {
-      transform: scale(0.9);
-    }
   }
-
-  @media (min-width: 380px) {
-    .acordeon__list:hover {
-      transform: scale(1.1);
-    }
-  }
+ }
 }
 
 @media (min-width: 320px) { 

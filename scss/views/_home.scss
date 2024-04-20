@@ -12,26 +12,26 @@
   }
 
 @media (min-width: 768px) and (max-width: 1024px) { 
-    .hero__title {
-      font-size: 50px;
-    }
+  .hero__title {
+    font-size: 50px;
+  }
 }
     
 @media (min-width: 640px) and (max-width: 768px) {
-    .hero__title {
-      font-size: 46px;
-    }
+  .hero__title {
+    font-size: 46px;
+  }
 }
     
 @media (min-width: 320px) and (max-width: 640px)  {
-    .hero__title {
-      font-size: 40px;
-      padding-top: 80px;
-    }
+  .hero__title {
+    font-size: 40px;
+    padding-top: 80px;
+  }
 }
 
 .hero__title::selection {
-    color: $color-text-secondary;
+  color: $color-text-secondary;
 } 
   .hero__span {
     color: $color-text-secondary;
@@ -49,25 +49,25 @@
 }
   
 @media (min-width: 640px) and (max-width: 768px) { 
-    .hero__buttons {
-      flex-direction: column;
-      max-width: 250px;
-      margin: 0 auto;
-      gap: 20px;
-      text-align: center;
-      padding-top: 60px;
-    }
+  .hero__buttons {
+    flex-direction: column;
+    max-width: 250px;
+    margin: 0 auto;
+    gap: 20px;
+    text-align: center;
+    padding-top: 60px;
+  }
 }
   
 @media (min-width: 320px) and (max-width: 640px) {
-    .hero__buttons {
-      flex-direction: column;
-      max-width: 200px;
-      margin: 0 auto;
-      gap: 15px;
-      text-align: center;
-      margin-top: 20px;
-    }
+  .hero__buttons {
+    flex-direction: column;
+    max-width: 200px;
+    margin: 0 auto;
+    gap: 15px;
+    text-align: center;
+    margin-top: 20px;
+  }
 }
 
 .hero__button { 
@@ -92,7 +92,6 @@
   .button {
     padding: 8px 14px;
     font-size: 14px;
-  
   }
 } 
 
@@ -159,15 +158,15 @@
 
     @media (min-width: 320px) {  
       .article__image {
-          width: 250px;
-          height: 250px;
+        width: 250px;
+        height: 250px;
       }
     }
     
     @media (min-width: 640px) { 
       .article__image {
-          width: 300px;
-          height: 300px;
+        width: 300px;
+        height: 300px;
       }
     }
 }

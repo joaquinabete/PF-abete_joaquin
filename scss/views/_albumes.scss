@@ -2,25 +2,25 @@
     width: 100%;
     @include flex-column-center; 
 
-    .container__description {
-      max-width: 990px;
-      margin-top: 20px;
+  .container__description {
+    max-width: 990px;
+    margin-top: 20px;
+  }
+
+    .container__title {
+      font-size: 40px;
+      font-weight: bold;
+      font-weight: 600;
+      color: $color-text-quinternary;
     }
 
-        .container__title {
-          font-size: 40px;
-          font-weight: bold;
-          font-weight: 600;
-          color: $color-text-quinternary;
-        }
-
-            .container__text {
-              padding-top: 10px;
-              font-size: 22px;
-              margin-top: 10px;
-              font-weight: 400;
-              color: $color-text-quinternary;
-            } 
+      .container__text {
+        padding-top: 10px;
+        font-size: 22px;
+        margin-top: 10px;
+        font-weight: 400;
+        color: $color-text-quinternary;
+      } 
 
 .cartas__container { 
   width: 100%;
@@ -32,74 +32,71 @@
   padding: 30px;
 }
 
- @media (min-width: 768px) and (max-width: 1024px) {  
+@media (min-width: 768px) and (max-width: 1024px) {  
+  .container {
+    margin: 0 auto;
+  }   
 
-    .container {
-        margin: 0 auto;
-    }   
+  .container__description {
+    max-width: 550px;
+  }
 
-    .container__description {
-        max-width: 550px;
-    }
+  .container__title {
+    font-size: 24px;
+  }
 
-    .container__title {
-        font-size: 24px;
-    }
-
-    .container__text {
-        font-size: 18px;
-    }
+  .container__text {
+    font-size: 18px;
+  }
     
-    .cartas__container {
-        grid-template-columns: auto auto;
-    }
+  .cartas__container {
+    grid-template-columns: auto auto;
+  }
 }
 
 @media (min-width: 640px) and (max-width: 768px) { 
     
-    .container {
-        margin: 0 auto;
-    }
+  .container {
+    margin: 0 auto;
+  }
 
-    .container__description {
-        max-width: 550px;
-    }
+  .container__description {
+    max-width: 550px;
+  }
 
-    .container__title {
-        font-size: 22px;
-    }
+  .container__title {
+    font-size: 22px;
+  }
 
-    .container__text {
-        font-size: 16px;
-    }
+  .container__text {
+    font-size: 16px;
+  }
 
-    .cartas__container {
-        grid-template-columns: auto auto;
-        
-    }
+  .cartas__container {
+    grid-template-columns: auto auto;    
+  }
 } 
 
 @media (min-width: 320px) and (max-width: 640px) { 
+  .container {
+    margin: 0 auto;
+  }
 
-    .container {
-        margin: 0 auto;
-    }
+  .container__description {
+    max-width: 250px;
+  }
 
-    .container__description {
-        max-width: 250px;
-    }
+  .container__title {
+    font-size: 20px;
+  }
 
-    .container__title {
-        font-size: 20px;
-    }
+  .container__text {
+    font-size: 16px;
+  }
 
-    .container__text {
-        font-size: 16px;
-    }
-
-    .cartas__container {
-        grid-template-columns: auto;
-    }
+  .cartas__container {
+    grid-template-columns: auto;
+  }
 }
 
 .carta { 
@@ -109,31 +106,31 @@
     border-radius: 8px;
 }
 
-    .carta__title {
-      font-size: 20px;
-      font-weight: bold;
-      margin-top: 10px;
+  .carta__title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: $color-text-quinternary;
+  }
+
+    .carta__text {
+      margin: 5px 0px;
+      font-size: 18px;
       color: $color-text-quinternary;
+      max-width: 250px;
     }
 
-      .carta__text {
-        margin: 5px 0px;
-        font-size: 18px;
-        color: $color-text-quinternary;
-        max-width: 250px;
+      .carta__button {
+        display: inline-block;
+        margin-top: 12px;
+        padding: 10px 40px;
       }
 
+      @media (min-width: 320px) and (max-width: 480px) { 
         .carta__button {
-          display: inline-block;
-          margin-top: 12px;
-          padding: 10px 40px;
+          padding: 6px 20px;
         }
-
-        @media (min-width: 320px) and (max-width: 480px) { 
-            .carta__button {
-                padding: 6px 20px;
-            }
-        }
+      }
     }
 }
 

@@ -406,8 +406,8 @@ body {
   padding: 20px;
   border-radius: 12px;
   box-shadow: 1px 1px 12px 2px black;
-  background-color: #000018;
   transition: all 0.4s ease;
+  background-color: #000018;
 }
 .tarjeta .tarjeta__content .tarjeta__image {
   border-radius: 50%;
@@ -812,7 +812,7 @@ body {
   }
 }
 
-.shows { /*Gran Contenedor Padre Shows Principal*/
+.shows {
   background-image: url(../assets/images/shows/teatro-de-verano.webp);
   background-repeat: no-repeat;
   background-size: cover;
