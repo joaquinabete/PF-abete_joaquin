@@ -18,7 +18,7 @@
 
 > [!TIP]
 > Cuarto Commit:
-> 1) Se cambia el lenguaje del sitio en todas las secciones de [En] a [En].
+> 1) Se cambia el lenguaje del sitio en todas las secciones de [En] a [Es].
 > 2) Se agregan las etiquetas SEO de metadatos.
 > 3) Se agregan los Headings faltantes a todas las secciones.
 > 4) Se corrigen algunos media queries del Header y del Footer.
